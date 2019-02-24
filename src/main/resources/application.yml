@@ -3,6 +3,8 @@ logging:
     org.springframework: info
     
 spring:  jackson:    serialization:      write-dates-as-timestamps: false
-        messages:    basename: message
+        messages:    basename: message  jpa:    show-sql: true
+  h2:    console:      enabled: true
     
 management:  endpoints:    web:      exposure:        include:        - "*"
+        
