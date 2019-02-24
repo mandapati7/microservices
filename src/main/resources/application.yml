@@ -4,3 +4,5 @@ logging:
     
 spring:  jackson:    serialization:      write-dates-as-timestamps: false
         messages:    basename: message
+    
+management:  endpoints:    web:      exposure:        include:        - "*"
